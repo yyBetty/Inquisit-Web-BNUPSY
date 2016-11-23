@@ -1,7 +1,7 @@
- <text instructiontxt1>
- 	/items = ("这是一个想要漂亮一点的指导语。 :D")
+<text instructiontxt1>
  	/hjustify = center
  	/vposition = 40 pct
+ 	/items = ("这是一个想要漂亮一点的指导语。 :D")
 	/size = (1000,300)
  	/fontstyle = ("幼圆体", 24pt)
  	/txbgcolor = (transparent)
@@ -9,9 +9,9 @@
   </text>
 
  <text instructiontxt2>
-  /items = ("所以有了下面的图片 ~ :D")
  	/hjustify = center
  	/vposition = 50 pct
+ 	/items = ("所以有了下面的图片 ~ :D")
 	/size = (1000,300)
  	/fontstyle = ("幼圆体", 24pt)
  	/txbgcolor = (transparent)
@@ -19,9 +19,9 @@
   </text>
 
  <text instructiontxt3>
- 	/items = ("唉... 按任意键进入实验吧，不闹了... ")
  	/hjustify = center
- 	/vposition = 95 pct
+ 	/vposition = 90 pct
+ 	/items = ("唉... 按任意键进入实验吧，不闹了... ")
 	/size = (1000,300)
  	/fontstyle = ("幼圆体", 16pt)
  	/txbgcolor = (transparent)
@@ -36,9 +36,9 @@
 
 
 <text goodbyetxt>
- 	/items = ("哈哈哈哈没有实验啦！多做被试赚被试费来孝顺父母吧~ :D")
  	/hjustify = center
-	/vposition = 100 pct
+	/vposition = 95 pct
+ 	/items = ("哈哈哈哈没有实验啦！多做被试赚被试费来孝顺父母吧~ :D")
  	/size = (1000,300)
  	/fontstyle = ("幼圆体", 24pt)
  	/txbgcolor = (transparent)
@@ -46,7 +46,7 @@
   </text>
 
 <picture secondpic>
- 	/items = ("http://v1.qzone.cc/pic/201311/01/13/40/52733edabd911015.jpg%21600x600.jpg")
+ 	/items = ("http://img2.duitang.com/uploads/item/201201/18/20120118192757_seaSe.thumb.600_0.jpg")
  	/valign = center
  	/halign = center
  </picture>
