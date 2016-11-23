@@ -1,0 +1,78 @@
+<picture instruction>
+    /items=("http://img.haote.com/upload/201412/13/1418458246_250_180_s.jpg")
+    /position = (40,20)
+    /valign = top
+    / halign = left
+</picture>
+
+<picture end>
+    /items=("http://img3.duitang.com/uploads/item/201508/14/20150814084811_YfjJi.thumb.700_0.jpeg")
+    /position = (28,13)
+    /valign = top
+    / halign = left
+</picture>
+
+<text hellotxt>
+	/hjustify = left
+    /vposition = 20 pct
+	/items = ("èèåæå¯¼è¯­æ¥å¦~~æ¬¢è¿å¤§å®¶åå æä»¬çå®éªå~ä½ ä¼æç¦æ¥çï¼")
+	/size = (1000,300)
+	/fontstyle = ("å®ä½", 24pt)
+	/txbgcolor = (transparent)
+	/txcolor = (170,170,255)
+</text>
+<text byetxt>
+	/hjustify = center
+    /vposition = 20 pct
+	/items = ("ç»æè¯­")
+	/size = (1000,300)
+	/fontstyle = ("å®ä½", 24pt)
+	/txbgcolor = (transparent)
+	/txcolor = (170,170,255)
+</text>
+
+// è¿éå¢å ä¸ä¸ªæé®éé¡¹ï¼å°±æ¯çå®æå¯¼è¯­ä¹åæä»»æé®ç»§ç»­ã
+
+<text anykey1>
+	/items = ("æä»»æé®åæ¢å°ç»æè¯­")
+	/vposition = 85 pct
+	/fontstyle = ("å®ä½", 18pt)
+	/txcolor = (255,255,255)
+	/txbgcolor = (transparent)
+</text>
+
+<text anykey2>
+	/items = ("æä»»æé®éåº")
+	/vposition = 97 pct
+	/fontstyle = ("å®ä½", 20pt)
+	/txcolor = (255,255,255)
+	/txbgcolor = (transparent)
+</text>
+
+<trial instruction>
+	/validresponse = (anyresponse)
+	/stimulusframes = [1=instruction,hellotxt,anykey1]
+	/recorddata = false
+</trial>
+
+<trial bye>
+	/validresponse = (anyresponse)
+	/stimulusframes = [1=end,byetxt,anykey2]
+	/recorddata = false
+</trial>
+
+//å¢å instruction blockæ¥åç°æå¯¼è¯­
+
+<block instructionblk>
+	/screencolor = (0,0,0)
+	/trials = [1 = instruction]
+</block>
+
+<block byeblk>
+	/screencolor = (0,0,0)
+	/trials = [1 = bye]
+</block>
+
+<expt>
+	/ blocks = [1 = instructionblk;2=byeblk]
+</expt>
