@@ -1,4 +1,4 @@
-
+﻿
 //注释：这里需要定义一个刺激
 
 <item any>
@@ -43,6 +43,23 @@
    /txbgcolor=(0,0,0)
 </text>
 
+//在这里加入需要反馈给被试的信息，例如是否正确作答，正确的就打一个对号，做错的就打一个错号。
+	
+
+	<text correctmsg>
+		/items = ("√")
+		/fontstyle = ("Arial", 10%)
+		/txbgcolor = (transparent)
+		/txcolor = (0,255,0)
+	</text>
+	
+
+	<text errormsg>
+		/items = ("×")
+		/fontstyle = ("Arial", 10%)
+		/txbgcolor = (transparent)
+		/txcolor = (255,0,0)
+	</text>
 	
 //注视点
 	<text fixation>
