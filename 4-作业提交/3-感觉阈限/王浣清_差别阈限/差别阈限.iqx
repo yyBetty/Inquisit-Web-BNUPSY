@@ -1,0 +1,346 @@
+﻿//设置注视点，正确错误反馈
+<item fixation>
+	/1 = "+"
+</item>
+
+<item correctmsg>
+	/1 = "√"
+</item>
+
+<item errormsg>
+	/1 = "×"
+</item>
+
+//指导语
+
+<instruct myinstruct>
+	/nextkey = (" ")
+	/fontstyle = ("楷体", 3%, false, false, false, false, 5, 1)
+	/txcolor = (0,0,0)
+	/screencolor = (255,255,255)
+	/lastlabel = "请按空格键继续"
+	/windowsize = (1366,768)
+</instruct>
+
+<page begininstruction>^^^^您好，非常欢迎您参与我们的研究！^^我们当前的研究是测验您的灰度觉察阈限。^^^^屏幕上会出现4张图片，请选出其中灰度与其他图片不同的那张图.^^</page>
+
+<page endinstruction>^^^^非常感谢您的参与，您提供的行为数据对我们的研究特别重要!^^为表达感谢，请您找主试领取被试费！^^再次感谢您的参与！^^</page>
+
+//插入图片，并指定位置
+<picture norpic1>
+    /items = ("N240.bmp")
+    /hposition = 20
+    /size = (300,300)
+</picture>
+
+<picture norpic2>
+    /items = ("N240.bmp")
+    /hposition = 40
+    /size = (300,300)
+</picture>
+
+<picture norpic3>
+    /items = ("N240.bmp")
+    /hposition = 60
+    /size = (300,300)
+</picture>
+
+<picture norpic4>
+    /items = ("N240.bmp")
+    /hposition = 80
+    /size = (300,300)
+</picture>
+
+<picture abnorpic1>
+    /items = ("N225.bmp")
+    /hposition = 20
+    /size = (300,300)
+</picture>
+
+<picture abnorpic2>
+    /items = ("N210.bmp")
+    /hposition = 40
+    /size = (300,300)
+</picture>
+
+<picture abnorpic3>
+    /items = ("N195.bmp")
+    /hposition = 60
+    /size = (300,300)
+</picture>
+
+<picture abnorpic4>
+    /items = ("N180.bmp")
+    /hposition = 80
+    /size = (300,300)
+</picture>
+
+<picture abnorpic5>
+    /items = ("N165.bmp")
+    /hposition = 20
+    /size = (300,300)
+</picture>
+
+<picture abnorpic6>
+    /items = ("N150.bmp")
+    /hposition = 40
+    /size = (300,300)
+</picture>
+
+<picture abnorpic7>
+    /items = ("N135.bmp")
+    /hposition = 60
+    /size = (300,300)
+</picture>
+
+<picture abnorpic8>
+    /items = ("N120.bmp")
+    /hposition = 80
+    /size = (300,300)
+</picture>
+
+<picture abnorpic9>
+    /items = ("N105.bmp")
+    /hposition = 20
+    /size = (300,300)
+</picture>
+
+<picture abnorpic10>
+    /items = ("N90.bmp")
+    /hposition = 40
+    /size = (300,300)
+</picture>
+
+<picture abnorpic11>
+    /items = ("N75.bmp")
+    /hposition = 60    
+    /size = (300,300)
+</picture>
+
+<picture abnorpic12>
+    /items = ("N60.bmp")
+    /hposition = 80
+    /size = (300,300)
+</picture>
+
+<picture abnorpic13>
+    /items = ("N45.bmp")
+    /hposition = 20
+    /size = (300,300)
+</picture>
+
+<picture abnorpic14>
+    /items = ("N30.bmp")
+    /hposition = 40
+    /size = (300,300)
+</picture>
+
+<picture abnorpic15>
+    /items = ("N15.bmp")
+    /hposition = 60
+    /size = (300,300)
+</picture>
+
+//定义背景、注视点、正确/错误的标记
+<shape blank>
+	/erase = True(0,0,0)
+	/color = (black)
+	/size = (600,600)
+    /shape = rectangle
+</shape>
+
+<text fixation>
+	/items = fixation
+	/select = 1
+	/fontstyle = ("Arial", 80ptc)
+	/txbgcolor = (0,0,0)
+	/txcolor = (255,255,255)
+</text>
+
+<text correctmsg>
+	/items = correctmsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (255,255,255)
+	/txbgcolor = (0, 0, 0)
+</text>
+
+<text errormsg>
+	/items = errormsg
+	/select = 1
+	/fontstyle = ("楷体", 60ptc, false, false, false, false, 5, 1)
+	/txcolor = (255,255,255)
+	/txbgcolor = (0, 0, 0)
+</text>
+
+//定义trail
+
+<trial one>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=abnorpic1,norpic2,norpic3,norpic4]
+   /correctresponse = (abnorpic1)
+   /validresponse = (abnorpic1,norpic2,norpic3,norpic4)
+</trial>
+
+<trial two>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,abnorpic2,norpic3,norpic4]
+   /correctresponse = (abnorpic2)
+   /validresponse = (norpic1,abnorpic2,norpic3,norpic4)
+</trial>
+
+<trial three>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,abnorpic3,norpic4]
+   /correctresponse = (abnorpic3)
+   /validresponse = (norpic1,norpic2,abnorpic3,norpic4)
+</trial>
+
+<trial four>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=abnorpic1,norpic2,norpic3,abnorpic4]
+   /correctresponse = (abnorpic4)
+   /validresponse = (abnorpic1,norpic2,norpic3,abnorpic4)
+</trial>
+
+<trial five>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=abnorpic5,norpic2,norpic3,norpic4]
+   /correctresponse = (abnorpic5)
+   /validresponse = (abnorpic5,norpic2,norpic3,norpic4)
+</trial>
+
+<trial six>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,abnorpic6,norpic3,norpic4]
+   /correctresponse = (abnorpic6)
+   /validresponse = (norpic1,abnorpic6,norpic3,norpic4)
+
+</trial>
+
+<trial seven>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,abnorpic7,norpic4]
+   /correctresponse = (abnorpic7)
+   /validresponse = (norpic1,norpic2,abnorpic7,norpic4)
+
+</trial>
+
+<trial eight>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,norpic3,abnorpic8]
+   /correctresponse = (abnorpic8)
+   /validresponse = (norpic1,norpic2,norpic3,abnorpic8)
+
+</trial>
+
+<trial nine>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,norpic3,abnorpic9]
+   /correctresponse = (abnorpic9)
+   /validresponse = (norpic1,norpic2,norpic3,abnorpic9)
+</trial>
+
+<trial ten>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=abnorpic10,norpic2,norpic3,norpic4]
+   /correctresponse = (abnorpic10)
+   /validresponse = (abnorpic10,norpic2,norpic3,norpic4)
+</trial>
+
+<trial eleven>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,abnorpic11,norpic3,norpic4]
+   /correctresponse = (abnorpic11)
+   /validresponse = (norpic1,abnorpic11,norpic3,norpic4)
+</trial>
+
+<trial twelve>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,abnorpic12,norpic4]
+   /correctresponse = (abnorpic12)
+   /validresponse = (norpic1,norpic2,abnorpic12,norpic4)
+</trial>
+
+<trial thirteen>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,norpic2,norpic3,abnorpic13]
+   /correctresponse = (abnorpic13)
+   /validresponse = (norpic1,norpic2,norpic3,abnorpic13)
+</trial>
+
+<trial fourteen>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=abnorpic14,norpic2,norpic3,norpic4]
+   /correctresponse = (abnorpic14)
+   /validresponse = (abnorpic14,norpic2,norpic3,norpic4)
+</trial>
+
+<trial fifteen>
+   /inputdevice = mouse
+   /pretrialpause = 500
+   /correctmessage = (correctmsg,500)
+   /errormessage = (errormsg,500)
+   /stimulustimes = [1=fixation; 500=norpic1,abnorpic15,norpic3,norpic4]
+   /correctresponse = (abnorpic15)
+   /validresponse = (norpic1,abnorpic15,norpic3,norpic4)
+</trial>
+
+//定义block，一个实验block
+
+<block chabieyuxian>
+	/screencolor = (0,0,0)
+	/blockfeedback = (meanlatency,correct)
+	/trials = [1-15 = noreplacenorepeat(one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen)]
+</block>
+
+//定义experience，
+<expt>
+    /preinstructions = (begininstruction)
+	/ blocks = [1 = chabieyuxian]
+    /postinstructions = (endinstruction)
+</expt>
+
+
