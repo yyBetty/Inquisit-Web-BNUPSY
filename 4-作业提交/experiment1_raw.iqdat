@@ -1,0 +1,16 @@
+date	time	group	subject	build	blocknum	trialnum	blockcode	trialcode	pretrialpause	posttrialpause	trialduration	trialtimeout	response	correct	latency	stimulusnumber1	stimulusitem1	stimulusonset1	stimulusnumber2	stimulusitem2	stimulusonset2	stimulusnumber3	stimulusitem3	stimulusonset3	stimulusnumber4	stimulusitem4	stimulusonset4	stimulusnumber5	stimulusitem5	stimulusonset5
+120116	10:50:26	1	1	5.0.5.0	2	1	picblk	npic01	100	0	0	0	lbuttondown	0	6859	1	+	0	1	1.jpg	816	1	pic2.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	2	picblk	npic02	100	0	0	0	lbuttondown	0	1315	1	+	0	1	1.jpg	816	1	1.jpg	816	1	pic3.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	3	picblk	npic06	100	0	0	0	lbuttondown	1	1068	1	+	0	1	1.jpg	816	1	1.jpg	816	1	pic7.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	4	picblk	npic12	100	0	0	0	lbuttondown	1	948	1	+	0	1	pic13.jpg	816	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	5	picblk	npic09	100	0	0	0	lbuttondown	1	851	1	+	0	1	1.jpg	816	1	pic10.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	6	picblk	npic05	100	0	0	0	lbuttondown	1	502	1	+	0	1	1.jpg	816	1	pic6.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	7	picblk	npic07	100	0	0	0	lbuttondown	1	997	1	+	0	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816	1	pic8.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	8	picblk	npic14	100	0	0	0	lbuttondown	1	782	1	+	0	1	1.jpg	816	1	1.jpg	816	1	pic15.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	9	picblk	npic13	100	0	0	0	lbuttondown	1	868	1	+	0	1	1.jpg	816	1	pic14.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	10	picblk	npic10	100	0	0	0	lbuttondown	1	853	1	+	0	1	1.jpg	816	1	1.jpg	816	1	pic11.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	11	picblk	npic03	100	0	0	0	lbuttondown	1	970	1	+	0	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816	1	pic4.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	12	picblk	npic11	100	0	0	0	lbuttondown	1	677	1	+	0	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816	1	pic12.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	13	picblk	npic08	100	0	0	0	lbuttondown	1	838	1	+	0	1	pic9.jpg	816	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	14	picblk	npic04	100	0	0	0	lbuttondown	1	483	1	+	0	1	pic5.jpg	816	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816
+120116	10:50:26	1	1	5.0.5.0	2	15	picblk	npic00	100	0	0	0	lbuttondown	0	2646	1	+	0	1	pic1.jpg	816	1	1.jpg	816	1	1.jpg	816	1	1.jpg	816
