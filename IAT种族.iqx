@@ -59,7 +59,7 @@
 // 注意引用语法结构，<%item.attributealabel.item.1%>的含义就是引用attributeAlable这个item中的第一个item的值，插入到字符串当中。
 
 <item introinstructions>
-	/ 1 = "在这个任务中,需要你根据呈现的词汇做出按键反应，如果呈现的是'<%item.attributeALabel.item.1%>'的词汇或者<%item.targetALabel.1%> ， <%item.targetBLabel.1%>之中某个特定种族的人的图片，请您按 ~"I~" 键，如果呈现的是'<%item.attributeBLabel.item.1%>' 的词汇，或者是跟前面要求<%item.targetALabel.1%> ， <%item.targetBLabel.1%>类别不同的词汇，请按~"E~" 键.最开始的几组练习会帮您熟悉这种按键设定，请您尽快的最初归类按键反应并尽量少的犯错。 如果您按错了按键，屏幕上会呈现一个红色的 ~"X~". 这样的情况下请尽快的按另外一个键来更正您的反应。~n~n请按空格键继续"
+	/ 1 = "在这个任务中,需要你根据呈现的词汇做出按键反应，如果呈现的是'<%item.attributeALabel.item.1%>'的词汇或者<%item.targetALabel.1%> ， <%item.targetBLabel.1%>之中某个特定种族的人的图片，请您按 ~"I~" 键，如果呈现的是'<%item.attributeBLabel.item.1%>' 的词汇，或者是跟前面要求<%item.targetALabel.1%> ， <%item.targetBLabel.1%>类别不同的图片，请按~"E~" 键.最开始的几组练习会帮您熟悉这种按键设定，请您尽快的最初归类按键反应并尽量少的犯错。 如果您按错了按键，屏幕上会呈现一个红色的 ~"X~". 这样的情况下请尽快的按另外一个键来更正您的反应。~n~n请按空格键继续"
 	/ 2 = "看到 <%item.attributeALabel.item.1%>类别的词汇是按 I 键~n~n看到其他类别的词汇请按 E 键~n~n~n您的反应越快越好~n~n请按空格键继续"
 </item>
 
@@ -67,7 +67,7 @@
 // 具体到每个block里，要求按键反应都是不一样的，可以通过一个指导语定义，根据具体的来定义具体的类型，例如下面的这个定义，用currentTarget变量来定义要求反应的类别，这个变量在block开始的时候进行赋值，那么在指导语里就能对应显示了。
 
 <item testinstructions>
-	/ 1 = "看到<%item.attributeALabel.item.1%> 或 <%values.currentTarget%>类的词汇，请按 I 键~n~n看到其他类别的词汇请按 E 键~n~n~n您的反应越快越好~n~n请按空格键开始"
+	/ 1 = "看到<%item.attributeALabel.item.1%> 的词汇或 <%values.currentTarget%>的图片，请按 I 键~n~n看到其他类别的词汇或图片请按 E 键~n~n~n您的反应越快越好~n~n请按空格键开始"
 </item>
 
 // 指导语界面上还需要呈现给被试各个类别都有哪些词汇，呈现方法如下，也是采用item引用的方式。因为这个部分后面也需要根据需要呈现
